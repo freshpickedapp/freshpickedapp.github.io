@@ -38,7 +38,6 @@ section {
     border-radius: 10px;
 }
 
-
 /* General Navbar Styles */
 .navbar {
     position: fixed;
@@ -60,6 +59,19 @@ section {
     transition: height 0.3s;
 }
 
+/* Toggle Button */
+.nav-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    margin-top: 10px; /* Space between logo and toggle button */
+    align-self: flex-start; /* Align toggle button to the left */
+}
+
+/* Nav Links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -82,17 +94,7 @@ section {
     background-color: #40916C;
 }
 
-/* Toggle Button */
-.nav-toggle {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* Hidden by default */
-}
-
-/* Responsive Navbar */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -101,7 +103,6 @@ section {
 
     .nav-toggle {
         display: block; /* Show the toggle button on smaller screens */
-        margin-left: auto; /* Align the toggle button to the right */
     }
 
     .nav-links {
@@ -123,7 +124,7 @@ section {
     }
 
     .navbar img {
-        height: 40px; /* Adjust logo size for smaller screens */
+        height: 50px; /* Adjust logo size for smaller screens */
     }
 }
 
