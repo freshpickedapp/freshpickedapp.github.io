@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Styles */ 
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
 
 body {
@@ -127,7 +127,7 @@ section {
         height: 50px; /* Adjust logo size for smaller screens */
     }
 }
-
+x
 /* Adjusting section headings for offset */
 section[id] {
     scroll-margin-top: 70px; /* Adjust this to match or exceed the navbar height */
