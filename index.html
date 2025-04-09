@@ -1,118 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FreshPicked</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="assets/k-bunny.png" type="image/png"> <!-- Added line for favicon -->
-    </head>
-    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshPicked</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/k-bunny.png" type="image/png" />
+
+    <!-- ✅ Waitlist Embed Styles and Script -->
+    <script src="https://www.waitforit.me/waitlistV3.bundle.js" async></script>
+    <link rel="stylesheet" type="text/css" href="https://www.waitforit.me/wfiEmbedStyles.css">
+</head>
+
 <body>
-    <!-- <header class="logo-header">
-        <img src="assets/logo.png" alt="FreshPicked Logo" class="logo-image">
-    </header> -->
-    <body>
-        <nav class="navbar">
-            <a href="index.html">
-                <img src="assets/logo.png" alt="FreshPicked Logo" style="height: 50px;"> <!-- Adjusted logo size -->
-            </a>
-            <button class="nav-toggle" onclick="toggleNav()">☰</button> <!-- Toggle button -->
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#download">Download</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    
-    
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="assets/logo.png" alt="FreshPicked Logo" style="height: 50px;" />
+        </a>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#download">Download</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <section id="download" class="hero-section">
         <div class="hero-content">
             <h2>Homegrown Produce, Neighbor to Neighbor</h2>
-            <p>Discover a community-driven marketplace for fresh, homegrown produce. <br> <br>  Available on the App Store in March 2025!</p>
-            <div class="download-container">
+            <p>
+                Discover a community-driven marketplace for fresh, homegrown produce.
+                <br /><br />
+                Available on the App Store in April 2025!
+            </p>
+            <!-- <div class="download-container">
                 <a href="https://fresh-picked-754e7.web.app/" class="app-store-link">
-                    <img src="assets/app-store.png" alt="App Store Download" class="app-store-image dynamic-image">
+                    <img src="assets/app-store.png" alt="App Store Download" class="app-store-image dynamic-image" />
                 </a>
+            </div> -->
+
+            <!-- ✅ Waitlist Form Embed -->
+            <!-- Waitlist Signup Area -->
+            <div class="waitlist-wrapper" style="margin-top: 30px; text-align: left;">
+                <!-- <img src="assets/k-bunny.png" alt="FreshPicked Bunny Logo" style="height: 100px; margin-bottom: 10px;" /> -->
+                <h3 style="font-size: 32px; color: #2D6A4F; margin-bottom: 5px;">Join our waitlist</h3>
+                <p style="font-size: 18px; color: #40916C; margin-bottom: 20px;">
+                    Get notified as soon as the app goes live!
+                </p>
+
+                <!-- Embedded waitlist form -->
+                <div id="waitforit-embed" data-project-id="f26df628-2490-491f-8bde-9b338af3f63f"></div>
             </div>
+
         </div>
-        <img src="assets/demo-app.png" alt="App mockup" class="hero-image">
+        <img src="assets/demo-app.png" alt="App mockup" class="hero-image" />
     </section>
-    
-    
+
     <script>
         function toggleNav() {
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.toggle('show');
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
         }
-    
-        // Close the nav bar when a link is clicked
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('navLinks').classList.remove('show');
+
+        document.querySelectorAll(".nav-links a").forEach((link) => {
+            link.addEventListener("click", () => {
+                document.getElementById("navLinks").classList.remove("show");
             });
         });
     </script>
-    
-    
-    
-    
 
     <section id="about" class="about-section">
         <h2>About FreshPicked</h2>
         <div class="about-content">
             <div class="card">
                 <h3>Community Connections</h3>
-                <p>FreshPicked connects neighbors who grow their own fruits and vegetables with those looking for fresh, organic produce.</p>
+                <p>
+                    FreshPicked connects neighbors who grow their own fruits and vegetables with those looking for fresh, organic produce.
+                </p>
             </div>
             <div class="card">
                 <h3>Sustainability First</h3>
-                <p>Our app fosters local connections and helps reduce food waste while promoting sustainability and eco-friendly living.</p>
+                <p>
+                    Our app fosters local connections and helps reduce food waste while promoting sustainability and eco-friendly living.
+                </p>
             </div>
             <div class="card">
                 <h3>Empowering Growth</h3>
-                <p>By joining FreshPicked, you contribute to a community that values local gardening and supports healthy living practices.</p>
+                <p>
+                    By joining FreshPicked, you contribute to a community that values local gardening and supports healthy living practices.
+                </p>
             </div>
         </div>
     </section>
-    
 
     <section id="features" class="section">
         <h2>Key Features</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <h3>AI-Powered Postings</h3>
-                <p>To save the user’s time and allow them to post their produce within seconds, AI can generate your entire post.</p>
+                <p>AI generates your listing for quick and easy posting.</p>
             </div>
             <div class="feature-card">
                 <h3>Local Pickup</h3>
-                <p>Find fresh produce nearby and pick up items directly from your neighbors.</p>
+                <p>Find and pick up fresh produce from nearby neighbors.</p>
             </div>
             <div class="feature-card">
                 <h3>Garden Showcase</h3>
-                <p>Show off your garden setup and inspire others with your gardening skills.</p>
+                <p>Share your garden with the community and get inspired.</p>
             </div>
             <div class="feature-card">
                 <h3>Community Interaction</h3>
-                <p>Share gardening tips, recipes, and join local events in our social section.</p>
+                <p>Join events, swap tips, and share your love for gardening.</p>
             </div>
             <div class="feature-card">
                 <h3>Smart Garden Helper</h3>
-                <p>FreshPicked’s tool uses deep learning to analyze growth patterns, offering personalized harvest timelines so sellers know exactly when their produce is ready for sale.</p>
+                <p>Know when your produce is ready to sell with AI insights.</p>
             </div>
             <div class="feature-card">
                 <h3>Buying & Trading</h3>
-                <p>Buy, sell, or trade produce with secure payment options like Apple Pay.</p>
+                <p>Secure options like Apple Pay make exchanges easy.</p>
             </div>
             <div class="feature-card">
                 <h3>Sustainability Focus</h3>
-                <p>Support local, eco-friendly gardening and reduce emissions by buying produce nearby.</p>
+                <p>Reduce your carbon footprint with hyperlocal produce.</p>
             </div>
             <div class="feature-card">
                 <h3>Tailored Recipes</h3>
-                <p>Our app suggests recipes based on produce in the user’s FreshPicked cart, helping them make the most of their fresh ingredients.</p>
+                <p>Get smart recipes based on your produce cart.</p>
             </div>
         </div>
     </section>
@@ -121,25 +137,29 @@
         <h2>Benefits</h2>
         <ul class="benefits-list">
             <li>Reduces food waste by connecting those with surplus produce to those who need it.</li>
-            <li>Offers the freshest, organic options right from your neighbors, ensuring top quality.</li>
+            <li>Offers the freshest, organic options right from your neighbors.</li>
             <li>Encourages local gardening and entrepreneurship.</li>
-            <li>Builds a supportive community around healthy living and gardening.</li>
-            <li>Sustainable and eco-friendly options for your kitchen.</li>
-            <li>Tastes better and fresher than store-bought produce and more nutrient dense.</li>
+            <li>Builds a supportive community around healthy living.</li>
+            <li>Promotes sustainable and eco-friendly food choices.</li>
+            <li>More nutrient-dense and delicious than store-bought!</li>
         </ul>
     </section>
 
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <div class="contact-content">
-            <p>We'd love to hear from you! Whether you have questions, feedback, or suggestions, feel free to reach out to us.</p>
-            <p>Email us at: <a href="mailto:freshpickedapp@gmail.com">freshpickedapp@gmail.com</a></p>
+            <p>
+                We'd love to hear from you! Whether you have questions, feedback, or suggestions, feel free to reach out to us.
+            </p>
+            <p>
+                Email us at:
+                <a href="mailto:freshpickedapp@gmail.com">freshpickedapp@gmail.com</a>
+            </p>
         </div>
     </section>
-    
 
     <footer>
-        <p>© 2024 FreshPicked | Homegrown Produce, Neighbor to Neighbor</p>
+        <p>© 2025 FreshPicked | Homegrown Produce, Neighbor to Neighbor</p>
     </footer>
 </body>
 </html>
